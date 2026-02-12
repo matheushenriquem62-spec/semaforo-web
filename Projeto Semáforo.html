@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Avaliação A1</title>
+
+
+
+  <style>
+
+    body {
+
+      background-color: black;
+
+    }
+
+    h1, h3, .p2 {
+
+      text-align: center;
+
+      color: white;
+
+    }
+
+
+
+    h1 {
+
+      line-height: 4px;
+
+      color: white;
+
+    }
+
+
+
+    .p3 {
+
+      color: white;
+
+      gap: 0px;
+
+
+
+    } 
+
+
+
+    .p2 {
+
+      line-height: 4px;
+
+      color: white;
+
+      width: auto;
+
+      
+
+    }
+
+
+
+    .img-container {
+
+
+      margin-top: 20px;
+
+    }
+
+
+
+    nav ul {
+
+      margin-left: 20px;
+
+    }
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+  <h1>Semáforos - As cores da Segurança no Trânsito</h1>
+
+  <h3>Entenda o papel fundamental dessas luzes</h3>
+
+
+
+  <div class="img-container">
+
+    <img id="semaforoImg" src="vermelho.png" width="300" alt="Semáforo">
+
+    <br><br>
+
+    <button onclick="mudarCor()">Trocar cor</button>
+
+  </div>
+
+
+
+  <script>
+
+    let cores = ['verde.png', 'amarelo.png', 'vermelho.png'];
+
+    let indiceCor = 0;
+
+
+
+    function mudarCor() {
+
+      indiceCor = (indiceCor + 1) % cores.length;
+
+      document.getElementById("semaforoImg").src = cores[indiceCor];
+
+    }
+
+  </script>
+
+
+
+  <p class="p2">
+
+    Os <strong>semáforos</strong> são dispositivos essenciais para a organização e segurança do
+
+  </p>
+
+  <p class="p2">
+
+    trânsito. Eles orientam motoristas, ciclistas e pedestres sobre o momento certo de
+
+  </p>
+
+  <p class="p2">
+
+    parar, atenção e seguir, evitando acidentes e garantindo um fluxo mais harmônico
+
+  </p>
+
+  <p class="p2">
+
+    nas vias urbanas.
+
+  </p>
+
+
+
+  <p class="p3">Cada cor tem um significado universal:</p>
+
+  <div class="p3">
+
+  <nav>
+
+    <ul>
+
+      <li><strong>Vermelho:</strong> indica <strong>pare</strong>. É o momento de interromper o movimento e garantir a segurança do cruzamento.</li>
+
+        <li><strong>Amarelo:</strong> sinaliza <strong>atenção</strong>. Serve de alerta para mudança de sinal, preparando o motorista para parar.</li>
+
+      <li><strong>Verde:</strong> sinaliza <strong>siga</strong>. É o momento seguro para continuar o trajeto.</li>
+
+    </ul>
+
+  </div>
+
+    <p class="p2">Além de controlar veículos, muitos semáforos modernos contam com</p>
+
+    <p class="p2">temporizadores, sensores de fluxo e sinalização sonora, contribuindo para um</p>
+
+    <p class="p2">trânsito mais inteligente e acessível. Assim, o simples conjunto de luzes se</p>
+
+    <p class="p2">transforma em um verdadeiro símbolo de <strong>ordem e respeito coletivo</strong>.</p>
+
+  </nav>
+
+
+
+</body>
+
+</html>
